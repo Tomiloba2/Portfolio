@@ -54,7 +54,7 @@ export function Experience(props: IExperienceProps) {
                             I briefly served as a frontend developer at Parakletus, where I contributed to web development
                             projects. During my tenure, I honed my skills in front-end technologies like REACT and NEXT.js
                             and gained practical experiences in delivering high-quality solutions. Though my time at Parakletus was
-                            short, I am grateful for the oppurtunuity to contribute to the team's success
+                            short, I am grateful for the oppurtunuity to contribute to the team&apos;s success
                         </p>
                     </div>
                 </section>

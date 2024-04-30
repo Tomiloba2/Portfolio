@@ -30,7 +30,7 @@ export function Hero(props: IHeroProps) {
             <div className='grid sm:grid-cols-2 place-items-center '>
                 <section className='flex flex-col gap-10 text-center sm:text-justify'>
                     <div>
-                        <h4 className=''> I'M &nbsp;
+                        <h4 className=''> I&apos;M &nbsp;
                             <span className=' text-2xl font-extrabold text-purple-700 '>
                                 TOMILOBA DAVID
                             </span>
