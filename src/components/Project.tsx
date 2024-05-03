@@ -20,7 +20,6 @@ export function Project(props: IProjectProps) {
     const onCloseModal = () => setOpen(false)
     return (
         <section
-            key={title}
             className='grid lg:grid-cols-2 shadow-sm shadow-cyan-950 rounded-md py-2 '>
             <div className='grid place-items-center'>
                 <Image

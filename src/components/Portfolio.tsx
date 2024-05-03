@@ -1,7 +1,4 @@
 "use client"
-import Image from 'next/image';
-import { FaGithub } from "react-icons/fa"
-import { MdPlayCircle, MdLink } from 'react-icons/md'
 import { motion } from 'framer-motion'
 import * as React from 'react';
 import { Project } from './Project';
@@ -29,7 +26,7 @@ export function Portfolio(props: IPortfolioProps) {
             links: [
                 "https://todo-manager-client.vercel.app",
                 "https://github.com/Tomiloba2/Todo-manager.git",
-                ""
+                "/todo.mp4"
             ],
             description: "Employing React, TypeScript and API integration, I built a comprehensive Full stack Task Manager application, showcasing my proficiency in front-end and back-end development"
         },
@@ -56,9 +53,6 @@ export function Portfolio(props: IPortfolioProps) {
             description: "Leveraging Next.js, Framer Motion and tailwind, I crafted a fully responsive portfolio, demonstrating my expertise in creating visually appealing and interactive web experiences  "
         }
     ]
-    const [open, setOpen] = React.useState(false)
-    const onOpenModal = () => setOpen(true)
-    const onCloseModal = () => setOpen(false)
     return (
         <motion.div
             initial={{
@@ -80,7 +74,9 @@ export function Portfolio(props: IPortfolioProps) {
             <div className='grid sm:grid-cols-2 gap-4'>
                 {portfolioList.map((item) => {
                     return (
-                        <Project {...item} />
+                        <div key={item.title}>
+                            <Project {...item} />
+                        </div>
                     )
                 })}
             </div>
