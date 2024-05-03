@@ -57,6 +57,7 @@ export function Skills(props: ISkillsProps) {
                                 alt={item.title}
                                 width={100}
                                 height={100}
+                                className=''
                             />
                             <p className='text-center'>{item.title}</p>
                         </motion.div>

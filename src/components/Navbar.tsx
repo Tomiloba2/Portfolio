@@ -16,7 +16,7 @@ export function Navbar(props: INavbarProps) {
 
     return (
         <>
-            <nav className='hidden md:flex justify-between align-middle gap-4 container mx-auto px-4 py-2 sticky top-0 z-50 backdrop-blur-lg'>
+            <nav className='sticky top-0 z-50 backdrop-blur-lg hidden md:flex justify-between align-middle gap-4 container mx-auto px-4 py-2 '>
                 <div id='logo' className='text-purple-700 text-2xl'>
                     <MdCodeOff />
                 </div>

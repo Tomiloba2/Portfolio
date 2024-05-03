@@ -1,7 +1,7 @@
 'use client'
 import * as React from 'react';
 import { MdCall, MdEmail } from 'react-icons/md';
-import { FaLinkedin, FaInstagram, FaWhatsapp, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaGithub, FaDev } from 'react-icons/fa';
 import { motion } from 'framer-motion'
 
 export interface IContactProps {
@@ -23,8 +23,8 @@ export function Contact(props: IContactProps) {
                 duration: 1,
                 ease: "easeInOut"
             }}
-            viewport={{once:true}}
-            >
+            viewport={{ once: true }}
+        >
             <div className='relative  border-purple-700 border-t-2'>
                 <h4 className=' p-1 absolute -top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-2xl font-bold z-10 bg-slate-200 dark:bg-slate-950 inline'>
                     Contact Me
@@ -48,7 +48,7 @@ export function Contact(props: IContactProps) {
             <div className='relative  border-purple-700 border-t-2'>
                 <div className=' p-2 absolute -top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-2xl font-bold z-10 bg-slate-200 dark:bg-slate-950 inline'>
                     <div className="flex flex-row gap-2">
-                        <a href=""
+                        <a href="https://github.com/tomiloba2"
                             title='github'
                             className='hover:text-yellow-500 cursor-pointer'>
                             <FaGithub />
@@ -58,15 +58,15 @@ export function Contact(props: IContactProps) {
                             className='text-cyan-500 hover:text-yellow-500 cursor-pointer'>
                             <FaLinkedin />
                         </a>
-                        <a href=""
+                        <a href="https://instagram.com/tomiloba211"
                             title='instagram'
                             className='text-red-500 hover:text-yellow-500 cursor-pointer'>
                             <FaInstagram />
                         </a>
-                        <a href=""
-                            title='whatsapp'
-                            className='text-green-500 hover:text-yellow-500 cursor-pointer'>
-                            <FaWhatsapp />
+                        <a href="https://dev.to/tomiloba2"
+                            title='dev.to'
+                            className=' hover:text-yellow-500 cursor-pointer'>
+                            <FaDev />
                         </a>
                     </div>
                 </div>

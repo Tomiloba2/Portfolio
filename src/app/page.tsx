@@ -38,12 +38,12 @@ export default function Home() {
           <Portfolio />
         </section>
         <section id="blog" className='bg-slate-200 dark:bg-slate-900'>
-          <div className="container px-4 py-4">
+          <div className="container mx-auto px-4 py-4">
             <Blogs />
           </div>
         </section>
         <section id="contact" className=''>
-          <div className="container px-4 py-4">
+          <div className="container mx-auto px-4 py-4">
             <Contact />
           </div>
         </section>

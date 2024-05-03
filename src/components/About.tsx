@@ -19,24 +19,24 @@ export function About(props: IAboutProps) {
                 x: 0
             }}
             transition={{
-                delay:0.5,
-                duration:1,
-                ease:"easeInOut"
+                delay: 0.5,
+                duration: 1,
+                ease: "easeInOut"
             }}
-            viewport={{once:true}}
+            viewport={{ once: true }}
         >
             <h2 className='text-2xl font-bold'>About</h2>
             <div className='px-2 flex flex-row gap-1'>
                 <p className=' text-purple-700'><HorizontalRule /> </p>
                 <p className='text-justify'>
-                    I am a passionate Software developer who is commited to creating amazing online experiences.
+                    I am a passionate Software developer who is commited to creating amazing online experiences using various frontend and backend technologies.
                     Having worked in the industry for over a year I have developed my abilities in&nbsp;
                     <span className='text-purple-700'>frontend development</span >,&nbsp;
                     <span className='text-purple-700'>API development</span> and &nbsp;
                     <span className='text-purple-700'>Responsive Web Design</span>.
                     My strategy is based on meeting the specific need of every client by providing individualised solutions that
-                    produce outcomes. <br />
-                    I enjoy a challenge and I am proud of the creative solutionss I can come up with for challenging issues.
+                    produce  required outcomes. <br />
+                    I enjoy a challenge and I am proud of the creative solutions I can come up with for challenging issues.
                     Whether it is improving user experiences ,expediting procedures, or raising conversion rates
                 </p>
             </div >

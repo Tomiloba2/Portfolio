@@ -3,16 +3,18 @@ import { Modal as ReactModal } from 'react-responsive-modal'
 import 'react-responsive-modal/styles.css'
 
 export interface IModalProps {
-    children: React.ReactNode
-    open:boolean;
-    onCloseModal:()=>void
+    open: boolean;
+    onCloseModal: () => void
+    src: string
 }
 
 export function Modal(props: IModalProps) {
     return (
         <div>
             <ReactModal open={props.open} onClose={props.onCloseModal} center>
-                {props.children}
+                <video height={50} width={320} controls>
+                    <source src={props.src} type='video/mp4' />
+                </video>
             </ReactModal>
         </div>
     );

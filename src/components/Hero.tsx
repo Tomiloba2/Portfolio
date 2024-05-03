@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import * as React from 'react';
-import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaDev, FaGithub, FaInstagram, FaLinkedin} from 'react-icons/fa';
 import { motion } from 'framer-motion'
 
 export interface IHeroProps {
@@ -45,23 +45,12 @@ export function Hero(props: IHeroProps) {
                         </div>
                     </div>
                 </section>
-                <motion.section className=''
-                    initial={{
-                        y: -5
-                    }}
-                    animate={{
-                        y: 0
-                    }}
-                    transition={{
-                        duration: 1
-                    }}
-                >
+                <motion.section>
                     <Image
                         src={`/img.png`}
                         alt='tomiloba developer photo'
-                        width={500}
-                        height={500}
-                        layout='responsive'
+                        width={300}
+                        height={300}
                         className='dark:sepia rounded-full object-cover'
                     />
                 </motion.section>
@@ -69,7 +58,7 @@ export function Hero(props: IHeroProps) {
             <div className='absolute bottom-2 right-2'>
                 <div className=' text-md font-bold '>
                     <div className="flex flex-col gap-2">
-                        <a href=""
+                        <a href="https://github.com/tomiloba2"
                             title='github'
                             className='hover:text-yellow-500 cursor-pointer'>
                             <FaGithub />
@@ -79,15 +68,15 @@ export function Hero(props: IHeroProps) {
                             className='text-cyan-500 hover:text-yellow-500 cursor-pointer'>
                             <FaLinkedin />
                         </a>
-                        <a href=""
+                        <a href="https://instagram.com/tomiloba211"
                             title='instagram'
                             className='text-red-500 hover:text-yellow-500 cursor-pointer'>
                             <FaInstagram />
                         </a>
-                        <a href=""
-                            title='whatsapp'
-                            className='text-green-500 hover:text-yellow-500 cursor-pointer'>
-                            <FaWhatsapp />
+                        <a href="https://dev.to/tomiloba2"
+                            title='dev.to'
+                            className=' hover:text-yellow-500 cursor-pointer'>
+                            <FaDev />
                         </a>
                     </div>
                 </div>
