@@ -63,7 +63,7 @@ export function Hero(props: IHeroProps) {
                             className='hover:text-yellow-500 cursor-pointer'>
                             <FaGithub />
                         </a>
-                        <a href=""
+                        <a href="https://www.linkedin.com/in/omojolatomiloba-david-frontend-and-backend-developer-b31506255/"
                             title='linkedin'
                             className='text-cyan-500 hover:text-yellow-500 cursor-pointer'>
                             <FaLinkedin />
